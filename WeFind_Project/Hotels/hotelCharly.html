@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="Description" content="accomodation finder">
+        <meta name="Author" content="Dario Reig">
+        <meta name="Author" content="Aleix Diaz">
+        <meta name="Keywords" content="hotels, vacation, mallorca">
+        <title>We Find.</title>
+        <link rel="icon" type="image/png" target="_blank" href="./images/icon.png">
+        <link rel="stylesheet" type="text/css" target="_blank" href="../hotelMultiple.css">
+    </head>
+    <body>
+        <header>
+            <nav class="btn-pluss-wrapper">
+                <div target="_blank" href="#" class="btn-pluss">
+                    <ul>
+                        <li><a target="_blank" href="../landing.html"> Home </a></li>
+                        <li><a target="_blank" href="../find.html"> Find. </a></li>
+                        <li><a target="_blank" href="../contact.html"> Contact </a></li>
+                        <li><a target="_blank" href="../aboutUs.html"> About Us </a></li>
+                    </ul>
+                </div>
+            </nav>
+            <a class="logo" target="_blank" href="../landing.html"> <img class="logo" src="../images/logo.png" alt="WeFind."></a>
+            <a class="twitter" target="_blank" href="https://twitter.com"><img class="twitter" src="../images/icons8-twitter-50.png" alt="Twitter"></a>
+            <a class="instagram" target="_blank" href="https://instagram.com"><img class="instagram" src="../images/icons8-instagram-50.png" alt="Instagram"></a> 
+            </header>
+        <main>
+            
+            <!--Hotel images-->
+            <div class="HotelTittle">
+                <h1><u>Charly's Apartments</u></h1>
+            </div>
+            <div class="blocks">
+                <div class="photosHotel">
+                    <table id="photosTable">
+                        <tr> 
+                            <td>
+                                <img class="photosHotel" alt="One bedroom's apartment picture" title="One Bedroom's Apartment, Charly's" src="../hotelPics/Charly/Charly_1bedroom.jpg">
+                            </td>
+                            <td>
+                                <img class="photosHotel" alt="Two bedrooms' apartment picture" title="Two Bedrooms' Apartment, Charly's" src="../hotelPics/Charly/Charly_2bedroom.jpg">
+                            </td>
+                            <td>
+                                <img class="photosHotel" alt="Studio picture" title="Studio, Charly's" src="../hotelPics/Charly/Charly_Studio.jpg">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="photosHotelInfo">
+                                <h2>One Bedroom's Apartment</h2>
+                                <p><b>Capacity:</b> 3 adults & 1 child</p>
+                                <p><b>Rooms:</b> 1 Bedroom, 1 Bathroom</p>
+                            </td>
+                            <td class="photosHotelInfo">
+                                <h2>Two Bedrooms' Apartment</h2>
+                                <p><b>Capacity:</b> 5 adults & 1 child</p>
+                                <p><b>Rooms:</b> 2 Bedrooms, 1 Bathroom</p>
+                            </td>
+                            <td class="photosHotelInfo">
+                                <h2>Studio</h2>
+                                <p><b>Capacity:</b> 2 adults & 1 child</p>
+                                <p><b>Rooms:</b> 1 Bedroom, 1 Bathroom</p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <hr>
+
+                    <!--Hotel information-->
+                <div class="request">
+                    <div class="infoHotel">
+                        <p><b>Location: </b>Carrer Ran de Mar, 7, 07458 Can Picafort, Illes Balears, España.</p>
+                        <p><b>Capacity: </b>5 - 2 adults.</p>
+                        <p><b>Category: </b>Apartment.</p>
+                        <p><b>Information: </b>One key apartments, located in the centre of Can Picafort, in the Bay of Alcudia, 35 meters away from the beach and surrounded by a commercial centre with plenty of cafés, restaurants, shops, supermarkets, pubs, discotheques, etc…
+                        <br>
+                        The apartments are composed of two buildings of three floors with individual entrance each.
+                        <br>
+                        The complex has a reception area which offers services like safe-box, money exchange and left-luggage office.
+                        <br>
+                        All apartments dispose on a balcony/terrace with view to the sea and the beach, private bathroom, open kitchen, fridge, microwaves, TV, Wifi and room service. The public bus stop and the taxis are only a few meters away.</p>
+                    </div>
+                    
+                    <!--Location with google maps-->
+                    <div class="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3066.7332710704773!2d3.148404675516871!3d39.76809669486267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1296327123e6106f%3A0xca76d5f8eb6b649a!2sCharly&#39;s!5e0!3m2!1ses!2sus!4v1701522612040!5m2!1ses!2sus" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    
+                    <!--Booking request form-->
+                    <div class="bookingForm">
+                        <form class="form" action="https://www3.caib.es/xestib/?idioma=es" method="get">
+                            <fieldset>
+                                <legend><h2>Booking request</h2></legend>
+                                <label class="form_label" for="NameRequest"><b>Full name:</b></label><br>
+                                <input class="form__input" type="text" name="name" required><br>
+                                <label class="form_label" for="date"><b>Dates:</b></label><br>
+                                <input class="form__input" type="date" class="date" required><br>
+                                <b>Room:</b> <br>
+                                <div class="room_selector">
+                                    <div class="choice">
+                                        <input class="form__input" type="radio" name="apartment" checked>
+                                        <label class="choice" for="apartment">One Bedroom's Apartment</label>                                
+                                    </div>
+                                    <div class="choice">
+                                        <input class="form__input" type="radio" name="apartment">
+                                        <label class="choice" for="apartment">Two Bedrooms' Apartment</label>                                
+                                    </div>
+                                    <div class="choice">
+                                        <input class="form__input" type="radio" name="apartment">
+                                        <label class="choice" for="apartment">Studio Apartment</label>                                
+                                    </div>
+                                </div>
+                                <label class="form_label" for="capacity"><b>Number of guests:</b></label><br>
+                                <input class="form__input" type="number" name="guests-quantity" placeholder="0" required max="5" min="2"><br>
+                                <label class="form_label" for="observations"><b>Addtional information for the owner:</b></label><br>
+                                <textarea class="observations" maxlength="200" placeholder="Ex. 'Is it possible to bring our pet?' 'Could you provide a baby cot and a high chair for our son?" rows="5" cols="30"></textarea><br>
+                                <br>
+                                <input class="form__inputButton" type="submit" value="Request booking">
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!--Contact and information-->
+        <footer>
+            <a target="_blank" href="../aboutUs.html" ><div class="aboutUs">About Us</div></a>
+            <a target="_blank" href="../contact.html"><div class="contact"> Contact </div></a>
+        </footer>
+    </body>
+</html>

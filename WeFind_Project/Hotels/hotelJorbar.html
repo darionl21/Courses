@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" target="_blank" href="../hotel.css">
+    </head>
+    <body>
+        <header>
+        <nav class="btn-pluss-wrapper">
+            <div target="_blank" href="#" class="btn-pluss">
+                <ul>
+                    <li><a target="_blank" href="../landing.html"> Home </a></li>
+                    <li><a target="_blank" href="../find.html"> Find. </a></li>
+                    <li><a target="_blank" href="../contact.html"> Contact </a></li>
+                    <li><a target="_blank" href="../aboutUs.html"> About Us </a></li>
+                </ul>
+            </div>
+        </nav>
+        <a class="logo" target="_blank" href="../landing.html"> <img class="logo" src="../images/logo.png" alt="WeFind."></a>
+        <a class="twitter" target="_blank" href="https://twitter.com"><img class="twitter" src="../images/icons8-twitter-50.png" alt="Twitter"></a>
+        <a class="instagram" target="_blank" href="https://instagram.com"><img class="instagram" src="../images/icons8-instagram-50.png" alt="Instagram"></a>
+        </header>
+        <main>
+            
+            <!--Hotel images-->
+            <div class="HotelTittle">
+                <h1><u>Jorbar apartments</u></h1>
+            </div>
+            <div id="photosContainer">
+                <div class="photosHotel">
+                    <div id="welcomeContainer">
+                        <img id="welcome_img" alt="Living room picture" title="Living room, Jorbar" src="../hotelPics/Jorbar/Jorbar_libing.jpg">
+                    </div>
+                    <div class="mini_photosHotel">
+                        <div class="top">
+                            <img class="mini_picHotel" alt="Bedroom picture" title="Bedroom, Jorbar" src="../hotelPics/Jorbar/Jorbar_bedroom.jpg">
+                            <img class="mini_picHotel" alt="Kitchen picture" title="Kitchen, Jorbar" src="../hotelPics/Jorbar/Jorbar_kitchen.jpg">
+                        </div>
+                        <br>
+                        <div class="bot">
+                            <img class="mini_picHotel" alt="Terrace picture" title="Terrace, Jorbar" src="../hotelPics/Jorbar/Jorbar_terrace.jpg">
+                            <img class="mini_picHotel" alt="Building picture" title="Building, Jorbar" src="../hotelPics/Jorbar/Jorbar_building.jpg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="request">
+                <!--Hotel information-->
+                <div class="infoHotel">
+                    <p><b>Location: </b>Carrer de Cannes, 29, 07600 Palma, Illes Balears, España.</p>
+                    <p><b>Capacity: </b>2 adults.</p>
+                    <p><b>Category: </b>Apartment.</p>
+                    <p><b>Information: </b>Jorbar Apartments is located in the coastal town of El Arenal, just 200 yards away from the beach, making it an ideal choice for a relaxing vacation. The apartments offer free Wi-Fi and a private terrace. The apartments feature a seating area with a dining table and sofa bed. The adjoining kitchenette is equipped with a hob, fridge, and kitchenware. There is a twin bedroom and a private bathroom with a bathtub. Towels and bed linen are provided for the guests. The property is well-connected with a bus stop just around the corner from the apartments. The city of Palma is only a 15-minute drive away and offers a wide range of shops, restaurants, and discotheques for guests to explore.</p>
+                </div>
+
+
+                <!--Booking request form-->
+                <div class="bookingForm">
+                    <form action="https://www3.caib.es/xestib/?idioma=es" method="get">
+                        <fieldset>
+                            <legend><h2>Booking request</h2></legend>
+                            <label for="NameRequest"><b>Full name:</b></label><br>
+                            <input class="form__input" type="text" name="name" required><br>
+                            <label for="date"><b>Dates:</b></label><br>
+                            <input class="form__input" type="date" class="date" required><br>
+                            <label for="capacity"><b>Number of guests:</b></label><br>
+                            <input class="form__input" type="number" name="guests-quantity" placeholder="0" required max="2" min="2"><br>
+                            <label for="observations"><b>Addtional information for the owner:</b></label><br>
+                            <textarea class="observations" maxlength="200" placeholder="Ex. 'Is it possible to bring our pet?' 'Could you provide a baby cot and a high chair for our son?" rows="5" cols="30"></textarea><br><br>
+                            <input class="form__inputButton" type="submit" value="Request booking">
+                        </fieldset>
+                    </form>
+                </div>
+
+                <!--Location with google maps-->
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12313.42481479274!2d2.753288!3d39.5064496!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1297978b57ca4ee5%3A0x86f113ce694e4b95!2sApartamentos%20Jorbar!5e0!3m2!1ses!2suk!4v1702228090693!5m2!1ses!2suk" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </main>
+
+        <!--Contact and information-->
+        <footer>
+            <a target="_blank" href="../aboutUs.html" ><div class="aboutUs">About Us</div></a>
+            <a target="_blank" href="../contact.html"><div class="contact"> Contact </div></a>
+        </footer>
+    </body>
+</html>

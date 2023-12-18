@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" target="_blank" href="../hotelMultiple.css">
+    </head>
+    <body>
+        <header>
+            <nav class="btn-pluss-wrapper">
+                <div target="_blank" href="#" class="btn-pluss">
+                    <ul>
+                        <li><a target="_blank" href="../landing.html"> Home </a></li>
+                        <li><a target="_blank" href="../find.html"> Find. </a></li>
+                        <li><a target="_blank" href="../contact.html"> Contact </a></li>
+                        <li><a target="_blank" href="../aboutUs.html"> About Us </a></li>
+                    </ul>
+                </div>
+            </nav>
+            <a class="logo" target="_blank" href="../landing.html"> <img class="logo" src="../images/logo.png" alt="WeFind."></a>
+            <a class="twitter" target="_blank" href="https://twitter.com"><img class="twitter" src="../images/icons8-twitter-50.png" alt="Twitter"></a>
+            <a class="instagram" target="_blank" href="https://instagram.com"><img class="instagram" src="../images/icons8-instagram-50.png" alt="Instagram"></a> 
+            </header>
+        <main>
+            
+            <!--Hotel images-->
+            <div class="HotelTittle">
+                <h1><u>Son Maiol</u></h1>
+            </div>
+            <div class="blocks">
+                <div class="photosHotel">
+                    <table id="photosTable">
+                        <tr> 
+                            <td>
+                                <img class="photosHotel" alt="Moli picture" title="Moli, Son Maiol" src="../hotelPics/Maiol/Maiol_moli.png">
+                            </td>
+                            <td>
+                                <img class="photosHotel" alt="Pouet picture" title="Pouet, Son Maiol" src="../hotelPics/Maiol/Maiol_pouet.png">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="photosHotelInfo">
+                                <h2>Moli</h2>
+                                <p><b>Capacity:</b> 8 - 4 adults</p>
+                                <p><b>Rooms:</b> 4 Bedroom, 2 Bathrooms</p>
+                            </td>
+                            <td class="photosHotelInfo">
+                                <h2>Pouet</h2>
+                                <p><b>Capacity:</b> 8 - 4 adults</p>
+                                <p><b>Rooms:</b> 4 Bedrooms, 3 Bathrooms</p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <hr>
+
+                    <!--Hotel information-->
+                <div class="request">
+                    <div class="infoHotel">
+                        <p><b>Location: </b>Apartat, 126, 07320 Santa Maria del Camí, Illes Balears, España.</p>
+                        <p><b>Capacity: </b>8 - 4 adults.</p>
+                        <p><b>Category: </b>Hostal.</p>
+                        <p><b>Information: </b>The Son Maiol ‘possessió’ offers 2 independent fincas for rent located on a 40 hectars of private land, each with an independent outdoor swimming pool, a boutique winery and a full range of services. The establishment, located at Santa Maria del Camí, Mallorca, is only 15 minutes away from Palma and 20 minutes away from the beach, making it the ideal place for a family reunion or friends to spend a pleasant holiday with the privacy and tranquility of staying in the countryside.
+                        </div>
+                    
+                    <!--Booking request form-->
+                    <div class="bookingForm">
+                        <form class="form" action="https://www3.caib.es/xestib/?idioma=es" method="get">
+                            <fieldset>
+                                <legend><h2>Booking request</h2></legend>
+                                <label class="form_label" for="NameRequest"><b>Full name:</b></label><br>
+                                <input class="form__input" type="text" name="name" required><br>
+                                <label class="form_label" for="date"><b>Dates:</b></label><br>
+                                <input class="form__input" type="date" class="date" required><br>
+                                <b>Room:</b> <br>
+                                <div class="room_selector">
+                                    <div class="choice">
+                                        <input class="form__input" type="radio" name="apartment" checked>
+                                        <label class="choice" for="apartment">Es Moli</label>                                
+                                    </div>
+                                    <div class="choice">
+                                        <input class="form__input" type="radio" name="apartment">
+                                        <label class="choice" for="apartment">Es Pouet</label>                                
+                                    </div>
+                                </div>
+                                <label class="form_label" for="capacity"><b>Number of guests:</b></label><br>
+                                <input class="form__input" type="number" name="guests-quantity" placeholder="0" required max="8" min="4"><br>
+                                <label class="form_label" for="observations"><b>Addtional information for the owner:</b></label><br>
+                                <textarea class="observations" maxlength="200" placeholder="Ex. 'Is it possible to bring our pet?' 'Could you provide a baby cot and a high chair for our son?" rows="5" cols="30"></textarea><br>
+                                <br>
+                                <input class="form__inputButton" type="submit" value="Request booking">
+                            </fieldset>
+                        </form>
+                    </div>
+                    <!--Location with google maps-->
+                    <div class="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12289.437107047053!2d2.7594733!3d39.6416282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1297ea95e02b83fb%3A0x583cbe1c91b6ae1f!2sEs%20Mol%C3%AD%20de%20Son%20Maiol!5e0!3m2!1ses!2sde!4v1702245762340!5m2!1ses!2sde" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+        <!--Contact and information-->
+        <footer>
+            <a target="_blank" href="../aboutUs.html" ><div class="aboutUs">About Us</div></a>
+            <a target="_blank" href="../contact.html"><div class="contact"> Contact </div></a>
+        </footer>
+    </body>
+</html>

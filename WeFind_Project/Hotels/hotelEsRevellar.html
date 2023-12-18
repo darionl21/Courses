@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="Description" content="accomodation finder">
+        <meta name="Author" content="Dario Reig">
+        <meta name="Author" content="Aleix Diaz">
+        <meta name="Keywords" content="hotels, vacation, mallorca">
+        <title>We Find.</title>
+        <link rel="icon" type="image/png" target="_blank" href="./images/icon.png">
+        <link rel="stylesheet" type="text/css" target="_blank" href="../hotelMultiple.css">
+    </head>
+    <body>
+        <header>
+        <nav class="btn-pluss-wrapper">
+            <div target="_blank" href="#" class="btn-pluss">
+                <ul>
+                    <li><a target="_blank" href="../landing.html"> Home </a></li>
+                    <li><a target="_blank" href=""> Find. </a></li>
+                    <li><a target="_blank" href="../contact.html"> Contact </a></li>
+                    <li><a target="_blank" href="../aboutUs.html"> About Us </a></li>
+                </ul>
+            </div>
+        </nav>
+        <a class="logo" target="_blank" href="../landing.html"> <img class="logo" src="../images/logo.png" alt="WeFind."></a>
+        <a class="twitter" target="_blank" href="https://twitter.com"><img class="twitter" src="../images/icons8-twitter-50.png" alt="Twitter"></a>
+        <a class="instagram" target="_blank" href="https://instagram.com"><img class="instagram" src="../images/icons8-instagram-50.png" alt="Instagram"></a>
+        </header>
+        <main>
+            
+            <!--Hotel images-->
+            <div class="HotelTittle">
+                <h1><u>Es Revellar Art Resort</u></h1>
+            </div>
+            <div id="photosContainer">
+                <div class="photosHotel">
+                    <div id="welcomeContainer">
+                        <img id="welcome_img" alt="Living room picture" title="Living room, Es Revellar" src="../hotelPics/Revellar/Revellar_pool.jpg">
+                    </div>
+                    <div class="mini_photosHotel">
+                        <div class="top">
+                            <img class="mini_picHotel" alt="Bedroom picture" title="Bedroom, Es Revellar" src="../hotelPics/Revellar/Revellar_bedroom.jpg">
+                            <img class="mini_picHotel" alt="Pool picture" title="Pool, Es Revellar" src="../hotelPics/Revellar/Revellar_building.jpg">
+                        </div>
+                        <br>
+                        <div class="bot">
+                            <img class="mini_picHotel" alt="Terrace picture" title="Terrace, Es Revellar" src="../hotelPics/Revellar/Revellar_terrace.jpg">
+                            <img class="mini_picHotel" alt="Garden picture" title="Gerden, Es Revellar" src="../hotelPics/Revellar/Revellar_garden.jpg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="request">
+                <!--Hotel information-->
+                <div class="infoHotel">
+                    <p><b>Location: </b>Camí des Revellar Km 3.7 Pol 4 Parc 74, 07630 Campos, Illes Balears, España.</p>
+                    <p><b>Capacity: </b>8 adults.</p>
+                    <p><b>Category: </b>Villa.</p>
+                    <p><b>Information: </b>Situated a few kilometres from the best Mediterranean beaches, the four stars complex Es Revellar Art Resort will give you the best services and installations to benefit from the best accommodation during your holidays. In your visit, you will enjoy largest gardens which collect one of the largest art collections in Mallorca.  Our resort is the perfect place to celebrate any type of event: weddings, banquets, communions, private meetings... considering that its landscaped zone is equipped with a terrace and a tent characterize for its spectacularity and elegance that make the space the perfect scenary.</p>
+                </div>
+
+
+                <!--Booking request form-->
+                <div class="bookingForm">
+                    <form action="https://www3.caib.es/xestib/?idioma=es" method="get">
+                        <fieldset>
+                            <legend><h2>Booking request</h2></legend>
+                            <label for="NameRequest"><b>Full name:</b></label><br>
+                            <input class="form__input" type="text" name="name" required><br>
+                            <label for="date"><b>Dates:</b></label><br>
+                            <input class="form__input" type="date" class="date" required><br>
+                            <label for="capacity"><b>Number of guests:</b></label><br>
+                            <input class="form__input" type="number" name="guests-quantity" placeholder="0" required max="8" min="1"><br>
+                            <label for="observations"><b>Addtional information for the owner:</b></label><br>
+                            <textarea class="observations" maxlength="200" placeholder="Ex. 'Is it possible to bring our pet?' 'Could you provide a baby cot and a high chair for our son?" rows="5" cols="30"></textarea><br>
+                            <input class="form__inputButton" type="submit" value="Request booking">
+                        </fieldset>
+                    </form>
+                </div>
+
+                <!--Location with google maps-->
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12327.86521882006!2d2.9757011!3d39.4248864!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1297afa4dca4046f%3A0x4ba6483cccf550c5!2sEs%20Revellar%20Art%20Resort%20(adults%20only%20%2B16)!5e0!3m2!1ses!2suk!4v1702200203710!5m2!1ses!2suk" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+        </main>
+
+        <!--Contact and information-->
+        <footer>
+            <a target="_blank" href="../aboutUs.html" ><div class="aboutUs">About Us</div></a>
+            <a target="_blank" href="../contact.html"><div class="contact"> Contact </div></a>
+        </footer>
+    </body>
+</html>
