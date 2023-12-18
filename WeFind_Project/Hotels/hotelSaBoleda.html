@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="Description" content="accomodation finder">
+        <meta name="Author" content="Dario Reig">
+        <meta name="Author" content="Aleix Diaz">
+        <meta name="Keywords" content="hotels, vacation, mallorca">
+        <title>We Find.</title>
+        <link rel="icon" type="image/png" target="_blank" href="./images/icon.png">
+        <link rel="stylesheet" type="text/css" target="_blank" href="../hotelMultiple.css">
+    </head>
+    <body>
+        <header>
+            <nav class="btn-pluss-wrapper">
+                <div target="_blank" href="#" class="btn-pluss">
+                    <ul>
+                        <li><a target="_blank" href="../landing.html"> Home </a></li>
+                        <li><a target="_blank" href="../find.html"> Find. </a></li>
+                        <li><a target="_blank" href="../contact.html"> Contact </a></li>
+                        <li><a target="_blank" href="../aboutUs.html"> About Us </a></li>
+                    </ul>
+                </div>
+            </nav>
+            <a class="logo" target="_blank" href="../landing.html"> <img class="logo" src="../images/logo.png" alt="WeFind."></a>
+            <a class="twitter" target="_blank" href="https://twitter.com"><img class="twitter" src="../images/icons8-twitter-50.png" alt="Twitter"></a>
+            <a class="instagram" target="_blank" href="https://instagram.com"><img class="instagram" src="../images/icons8-instagram-50.png" alt="Instagram"></a>
+            </header>
+        <main>
+            
+            <!--Hotel images-->
+            <div class="HotelTittle">
+                <h1><u>Sa Boleda's Villas</u></h1>
+            </div>
+            <div class="photosHotel">
+                <table id="photosTable">
+                    <tr>
+                        <td>
+                            <img class="photosHotel" alt="Es Figueral picture" title="Es Figueral" src="../hotelPics/SaBoleda/Es_Figueral.jpg">
+                        </td>
+                        <td>
+                            <img class="photosHotel" alt="Es Sostre picture" title="Es Sostre" src="../hotelPics/SaBoleda/Es_Sostre.jpg">
+                        </td>
+                        <td>
+                            <img class="photosHotel" alt="Sa CLastra picture" title="Sa Clastra" src="../hotelPics/SaBoleda/Sa_Clastra.jpg">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="photosHotelInfo">
+                            <h2>Es Figueral</h2>
+                            <p><b>Capacity:</b> 6 adults.</p>
+                            <p><b>Rooms:</b> 3 Bedrooms, 3 Bathrooms</p>
+                        </td>
+                        <td class="photosHotelInfo">
+                            <h2>Es Sostre</h2>
+                            <p><b>Capacity:</b>4 adults</p>
+                            <p><b>Rooms:</b> 2 Bedrooms, 2 Bathrooms</p>
+                        </td>
+                        <td class="photosHotelInfo">
+                            <h2>Sa Clastra</h2>
+                            <p><b>Capacity:</b> 4 adults</p>
+                            <p><b>Rooms:</b> 2 Bedrooms, 3 Bathrooms</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <hr>
+
+                <!--Hotel information-->
+            <div class="request">
+                <div class="infoHotel">
+                    <p><b>Location: </b>Cami Son Niu, 07450 Santa Margalida, Balearic Islands</p>
+                    <p><b>Capacity: </b>6 - 4 adults.</p>
+                    <p><b>Category: </b>Villa.</p>
+                    <p><b>Information: </b>If you’re looking for a unique place, unique and exclusive to spend your holidays, if you are looking for passion and contact with nature, if you are looking for the warmth of the home, if you want to leave the world behind for a few days, in Majorca, the most beautiful island of the Mediterranean, a rural house on the farm Agroturismo de Sa Bolea It’s your place.
+                    <br>
+                    Our family relationship with these lands, today also our home, goes back to the 13th century. We feel for them a magical passion that we want to share with you by putting at your disposal the comfortable and restored rural houses of “Es Figueral”, “Es Sostre or “Sa Clastra”.
+                    <br>
+                    The three houses are completely independent, enjoy total privacy and are specially designed for holidays with couples, family or friends.</p>
+                </div>
+
+                <!--Location with google maps-->
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3068.908352565521!2d3.124524!3d39.7192423!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x129633116c593a8f%3A0x7c5902afde9e3a95!2sCasa%20Rural%20Sa%20Boleda!5e0!3m2!1ses!2ses!4v1701476023787!5m2!1ses!2ses" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+                <!--Booking request form-->
+                <div class="bookingForm">
+                    <form class="form" action="https://www3.caib.es/xestib/?idioma=es" method="get">
+                        <fieldset>
+                            <legend><h2>Booking request</h2></legend>
+                            <label class="form_label" for="NameRequest"><b>Full name:</b></label><br>
+                            <input class="form__input" type="text" name="name" required><br>
+                            <label class="form_label" for="date"><b>Dates:</b></label><br>
+                            <input class="form__input" type="date" class="date" required><br>
+                            <b>Room:</b> <br>
+                            <div class="room_selector">
+                                <div class="choice">
+                                    <input class="form__input" type="radio" name="apartment" checked>
+                                    <label class="choice" for="apartment">Es Figueral</label>                                
+                                </div>
+                                <div class="choice">
+                                    <input class="form__input" type="radio" name="apartment">
+                                    <label class="choice" for="apartment">Es Sostre</label>                                
+                                </div>
+                                <div class="choice">
+                                    <input class="form__input" type="radio" name="apartment">
+                                    <label class="choice" for="apartment">Sa Clastra</label>                                
+                                </div>
+                            </div>
+                            <label class="form_label" for="capacity"><b>Number of guests:</b></label><br>
+                            <input class="form__input" type="number" name="guests-quantity" placeholder="0" required max="4" min="2"><br>
+                            <label class="form_label" for="observations"><b>Addtional information for the owner:</b></label><br>
+                            <textarea class="observations" maxlength="200" placeholder="Ex. 'Is it possible to bring our pet?' 'Could you provide a baby cot and a high chair for our son?" rows="5" cols="30"></textarea><br>
+                            <br>
+                            <input class="form__inputButton" type="submit" value="Request booking">
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </main>
+
+        <!--Contact and information-->
+        <footer>
+            <a target="_blank" href="../aboutUs.html" ><div class="aboutUs">About Us</div></a>
+            <a target="_blank" href="../contact.html"><div class="contact"> Contact </div></a>
+        </footer>
+    </body>
+</html>

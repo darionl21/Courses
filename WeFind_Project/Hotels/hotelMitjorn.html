@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" target="_blank" href="../hotelMultiple.css">
+    </head>
+    <body>
+        <header>
+            <nav class="btn-pluss-wrapper">
+                <div target="_blank" href="#" class="btn-pluss">
+                    <ul>
+                        <li><a target="_blank" href="../landing.html"> Home </a></li>
+                        <li><a target="_blank" href="../find.html"> Find. </a></li>
+                        <li><a target="_blank" href="../contact.html"> Contact </a></li>
+                        <li><a target="_blank" href="../aboutUs.html"> About Us </a></li>
+                    </ul>
+                </div>
+            </nav>
+            <a class="logo" target="_blank" href="../landing.html"> <img class="logo" src="../images/logo.png" alt="WeFind."></a>
+            <a class="twitter" target="_blank" href="https://twitter.com"><img class="twitter" src="../images/icons8-twitter-50.png" alt="Twitter"></a>
+            <a class="instagram" target="_blank" href="https://instagram.com"><img class="instagram" src="../images/icons8-instagram-50.png" alt="Instagram"></a>
+            </header>
+        <main>
+            
+            <!--Hotel images-->
+            <div class="HotelTittle">
+                <h1><u>Es Mitjorn</u></h1>
+            </div>
+            <div class="photosHotel">
+                <table id="photosTable">
+                    <tr>
+                        <td>
+                            <img class="photosHotel" alt="Double Standard room picture" title="Double Standard room" src="../hotelPics/Mitjorn/Mitjorn_doble.webp">
+                        </td>
+                        <td>
+                            <img class="photosHotel" alt="Triple room picture" title="Es Sostre" src="../hotelPics/Mitjorn/Mitjorn_triple.webp">
+                        </td>
+                        <td>
+                            <img class="photosHotel" alt="Familiar picture" title="Familiar" src="../hotelPics/Mitjorn/Mitjorn_familiar.webp">
+                        </td>
+                        <td>
+                            <img class="photosHotel" alt="Sea Views picture" title="Sea Views" src="../hotelPics/Mitjorn/mitjorn_vistas.webp">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="photosHotelInfo">
+                            <h2>Double Standard</h2>
+                            <p><b>Capacity:</b> 2 adults.</p>
+                            <p><b>Rooms:</b> 1 Bedroom, 1 Bathroom</p>
+                        </td>
+                        <td class="photosHotelInfo">
+                            <h2>Triple</h2>
+                            <p><b>Capacity:</b>4 adults</p>
+                            <p><b>Rooms:</b> 2 Bedrooms, 1 Bathrooms</p>
+                        </td>
+                        <td class="photosHotelInfo">
+                            <h2>Familiar</h2>
+                            <p><b>Capacity:</b> 4 adults</p>
+                            <p><b>Rooms:</b> 2 Bedrooms, 2 Bathrooms</p>
+                        </td>
+                        <td class="photosHotelInfo">
+                            <h2>Sea View</h2>
+                            <p><b>Capacity:</b> 2 adults</p>
+                            <p><b>Rooms:</b> 1 Bedroom, 1 Bathroom</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <hr>
+
+                <!--Hotel information-->
+            <div class="request">
+                <div class="infoHotel">
+                    <p><b>Location: </b>Carrer Metge Mateu Gasull, 2, 07820 Sant Antoni de Portmany, Illes Balears, España</p>
+                    <p><b>Capacity: </b>4 - 2 adults.</p>
+                    <p><b>Category: </b>Villa.</p>
+                    <p><b>Information: </b>Es Mitjorn is a small family-run 18-room hotel founded in 1971 and run by our family since 1981. It is located in the municipality of Sant Antoni de Portmany, on the west coast of the island, a few meters from the port. , the promenade and the well-known Ibiza sunset. The taxi rank is a 2-minute walk from the hotel and 10 minutes from the bus station.
+
+                        Es Mitjorn is the hotel where you can rest and regain strength after exploring our beaches, trying our cuisine, getting to know our heritage and enjoying the party that makes this island so iconic. We want our little hotel to be your starting point to explore this little rock, this beautiful island.</p>
+                </div>
+
+                <!--Location with google maps-->
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12406.338937061993!2d1.3007949!3d38.9791492!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x129946b118faeff1%3A0xb5aeea9cbd440cee!2sHotel%20Es%20Mitjorn!5e0!3m2!1ses!2sde!4v1702247562745!5m2!1ses!2sde" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+                <!--Booking request form-->
+                <div class="bookingForm">
+                    <form class="form" action="https://www3.caib.es/xestib/?idioma=es" method="get">
+                        <fieldset>
+                            <legend><h2>Booking request</h2></legend>
+                            <label class="form_label" for="NameRequest"><b>Full name:</b></label><br>
+                            <input class="form__input" type="text" name="name" required><br>
+                            <label class="form_label" for="date"><b>Dates:</b></label><br>
+                            <input class="form__input" type="date" class="date" required><br>
+                            <b>Room:</b> <br>
+                            <div class="room_selector">
+                                <div class="choice">
+                                    <input class="form__input" type="radio" name="apartment" checked>
+                                    <label class="choice" for="apartment">Double Standard</label>                                
+                                </div>
+                                <div class="choice">
+                                    <input class="form__input" type="radio" name="apartment">
+                                    <label class="choice" for="apartment">Triple</label>                                
+                                </div>
+                                <div class="choice">
+                                    <input class="form__input" type="radio" name="apartment">
+                                    <label class="choice" for="apartment">Familiar</label>                                
+                                </div>
+                                <div class="choice">
+                                    <input class="form__input" type="radio" name="apartment">
+                                    <label class="choice" for="apartment">Sea View</label>                                
+                                </div>
+                            </div>
+                            <label class="form_label" for="capacity"><b>Number of guests:</b></label><br>
+                            <input class="form__input" type="number" name="guests-quantity" placeholder="0" required max="4" min="2"><br>
+                            <label class="form_label" for="observations"><b>Addtional information for the owner:</b></label><br>
+                            <textarea class="observations" maxlength="200" placeholder="Ex. 'Is it possible to bring our pet?' 'Could you provide a baby cot and a high chair for our son?" rows="5" cols="30"></textarea><br>
+                            <br>
+                            <input class="form__inputButton" type="submit" value="Request booking">
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </main>
+
+        <!--Contact and information-->
+        <footer>
+            <a target="_blank" href="../aboutUs.html" ><div class="aboutUs">About Us</div></a>
+            <a target="_blank" href="../contact.html"><div class="contact"> Contact </div></a>
+        </footer>
+    </body>
+</html>

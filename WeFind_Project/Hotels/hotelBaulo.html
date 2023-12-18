@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" target="_blank" href="../hotelMultiple.css">
+    </head>
+    <body>
+        <header>
+            <nav class="btn-pluss-wrapper">
+                <div target="_blank" href="#" class="btn-pluss">
+                    <ul>
+                        <li><a target="_blank" href="../landing.html"> Home </a></li>
+                        <li><a target="_blank" href="../find.html"> Find. </a></li>
+                        <li><a target="_blank" href="../contact.html"> Contact </a></li>
+                        <li><a target="_blank" href="../aboutUs.html"> About Us </a></li>
+                    </ul>
+                </div>
+            </nav>
+            <a class="logo" target="_blank" href="../landing.html"> <img class="logo" src="../images/logo.png" alt="WeFind."></a>
+            <a class="twitter" target="_blank" href="https://twitter.com"><img class="twitter" src="../images/icons8-twitter-50.png" alt="Twitter"></a>
+            <a class="instagram" target="_blank" href="https://instagram.com"><img class="instagram" src="../images/icons8-instagram-50.png" alt="Instagram"></a> 
+            </header>
+        <main>
+            
+            <!--Hotel images-->
+            <div class="HotelTittle">
+                <h1><u>Bauló Mar</u></h1>
+            </div>
+            <div class="blocks">
+                <div class="photosHotel">
+                    <table id="photosTable">
+                        <tr> 
+                            <td>
+                                <img class="photosHotel" alt="Standard picture" title="Standard, Son Flor" src="../hotelPics/Baulo/Baulo_Standard.png">
+                            </td>
+                            <td>
+                                <img class="photosHotel" alt="Studio picture" title="Studio, Son Flor" src="../hotelPics/Baulo/Baulo_studio.png">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="photosHotelInfo">
+                                <h2>Standard</h2>
+                                <p><b>Capacity:</b> 4 adults</p>
+                                <p><b>Rooms:</b> 2 Bedrooms, 1 Bathrooms</p>
+                            </td>
+                            <td class="photosHotelInfo">
+                                <h2>Studio</h2>
+                                <p><b>Capacity:</b> 2 adults</p>
+                                <p><b>Rooms:</b> 1 Bedroom, 1 Bathroom</p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <hr>
+
+                    <!--Hotel information-->
+                <div class="request">
+                    <div class="infoHotel">
+                        <p><b>Location: </b>Av. Son Bauló, 5, 07458 Can Picafort, Illes Balears, España.</p>
+                        <p><b>Capacity: </b>4 -2 adults.</p>
+                        <p><b>Category: </b>Hostal.</p>
+                        <p><b>Information: </b>We find inspiration both in the surrounding landscapes and in the local culture. We flee from crowds and seek discretion. The Mediterranean idea of family and friends enjoying and sharing good times together is at the heart of everything we do. You will always feel our warm and welcoming culture. We take care of all the details so that you feel at home on your vacation by the sea.
+                        </div>
+                    
+                    <!--Booking request form-->
+                    <div class="bookingForm">
+                        <form class="form" action="https://www3.caib.es/xestib/?idioma=es" method="get">
+                            <fieldset>
+                                <legend><h2>Booking request</h2></legend>
+                                <label class="form_label" for="NameRequest"><b>Full name:</b></label><br>
+                                <input class="form__input" type="text" name="name" required><br>
+                                <label class="form_label" for="date"><b>Dates:</b></label><br>
+                                <input class="form__input" type="date" class="date" required><br>
+                                <b>Room:</b> <br>
+                                <div class="room_selector">
+                                    <div class="choice">
+                                        <input class="form__input" type="radio" name="apartment" checked>
+                                        <label class="choice" for="apartment">Studio</label>                                
+                                    </div>
+                                    <div class="choice">
+                                        <input class="form__input" type="radio" name="apartment">
+                                        <label class="choice" for="apartment">Standard</label>                                
+                                    </div>
+                                </div>
+                                <label class="form_label" for="capacity"><b>Number of guests:</b></label><br>
+                                <input class="form__input" type="number" name="guests-quantity" placeholder="0" required max="4" min="2"><br>
+                                <label class="form_label" for="observations"><b>Addtional information for the owner:</b></label><br>
+                                <textarea class="observations" maxlength="200" placeholder="Ex. 'Is it possible to bring our pet?' 'Could you provide a baby cot and a high chair for our son?" rows="5" cols="30"></textarea><br>
+                                <br>
+                                <input class="form__inputButton" type="submit" value="Request booking">
+                            </fieldset>
+                        </form>
+                    </div>
+                    <!--Location with google maps-->
+                    <div class="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12268.243251087766!2d3.1652983!3d39.760743!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12963216b47b5bdd%3A0x2c19e9530e118d54!2sBaul%C3%B3%20Mar%20Suites!5e0!3m2!1ses!2sde!4v1702246968425!5m2!1ses!2sde" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+        <!--Contact and information-->
+        <footer>
+            <a target="_blank" href="../aboutUs.html" ><div class="aboutUs">About Us</div></a>
+            <a target="_blank" href="../contact.html"><div class="contact"> Contact </div></a>
+        </footer>
+    </body>
+</html>

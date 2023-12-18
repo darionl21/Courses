@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" target="_blank" href="../hotelMultiple.css">
+    </head>
+    <body>
+        <header>
+            <nav class="btn-pluss-wrapper">
+                <div target="_blank" href="#" class="btn-pluss">
+                    <ul>
+                        <li><a target="_blank" href="../landing.html"> Home </a></li>
+                        <li><a target="_blank" href="../find.html"> Find. </a></li>
+                        <li><a target="_blank" href="../contact.html"> Contact </a></li>
+                        <li><a target="_blank" href="../aboutUs.html"> About Us </a></li>
+                    </ul>
+                </div>
+            </nav>
+            <a class="logo" target="_blank" href="../landing.html"> <img class="logo" src="../images/logo.png" alt="WeFind."></a>
+            <a class="twitter" target="_blank" href="https://twitter.com"><img class="twitter" src="../images/icons8-twitter-50.png" alt="Twitter"></a>
+            <a class="instagram" target="_blank" href="https://instagram.com"><img class="instagram" src="../images/icons8-instagram-50.png" alt="Instagram"></a> 
+            </header>
+        <main>
+            
+            <!--Hotel images-->
+            <div class="HotelTittle">
+                <h1><u>Finca Es Cabàs</u></h1>
+            </div>
+            <div class="blocks">
+                <div class="photosHotel">
+                    <table id="photosTable">
+                        <tr> 
+                            <td>
+                                <img class="photosHotel" alt="Capella's picture" title="Capella, Es Cabas" src="../hotelPics/Cabas/Cabas_Capella.jpg">
+                            </td>
+                            <td>
+                                <img class="photosHotel" alt="Na Marit picture" title="Na Marit, Es Cabas" src="../hotelPics/Cabas/Cabas_Marit.jpg">
+                            </td>
+                            <td>
+                                <img class="photosHotel" alt="Talaia picture" title="Talaia, Es Cabas" src="../hotelPics/Cabas/Cabas_talaia.jpg">
+                            </td>
+                            <td>
+                                <img class="photosHotel" alt="Sa Cova picture" title="Sa Cova, Es Cabas" src="../hotelPics/Cabas/Cabas_cova.jpg">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="photosHotelInfo">
+                                <h2>Capella</h2>
+                                <p><b>Capacity:</b> 2 adults</p>
+                                <p><b>Rooms:</b> 1 Bedroom, 1 Bathroom</p>
+                            </td>
+                            <td class="photosHotelInfo">
+                                <h2>Na Marit</h2>
+                                <p><b>Capacity:</b> 2 adults</p>
+                                <p><b>Rooms:</b> 1 Bedroom, 1 Bathroom</p>
+                            </td>
+                            <td class="photosHotelInfo">
+                                <h2>Talaia</h2>
+                                <p><b>Capacity:</b> 2 adults</p>
+                                <p><b>Rooms:</b> 1 Bedroom, 1 Bathroom</p>
+                            </td>
+                            <td class="photosHotelInfo">
+                                <h2>Sa Cova</h2>
+                                <p><b>Capacity:</b> 2 adults & 2 children</p>
+                                <p><b>Rooms:</b> 2 Bedrooms, 1 Bathroom</p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <hr>
+
+                    <!--Hotel information-->
+                <div class="request">
+                    <div class="infoHotel">
+                        <p><b>Location: </b>Carretera, km 2,4, 07320 Santa Maria del Camí, Balearic Islands, España.</p>
+                        <p><b>Capacity: </b>2 adults.</p>
+                        <p><b>Category: </b>Inn.</p>
+                        <p><b>Information: </b>Finca Es Cabàs is the ideal place to feel the essence of rural Mallorca, being able to live first-hand very exclusive experiences that allow you to see life in the Mallorcan countryside today. It is located very close to Palma, just 15 minutes away, so it is very easily accessible.
+
+                            The origins of the estate date back to the Arab occupation in Mallorca, the restoration of the estate has been carried out preserving as much as possible the ancient essence of the construction.
+                            
+                            The lime kilns, the charcoal burners' houses, the sitjas and the old tafona have been restored to provide the visitor with a sample of the old country life on a farm in the foothills of the Tramuntana Mountains.</p>
+                    </div>
+                    
+                    
+                    <!--Booking request form-->
+                    <div class="bookingForm">
+                        <form class="form" action="https://www3.caib.es/xestib/?idioma=es" method="get">
+                            <fieldset>
+                                <legend><h2>Booking request</h2></legend>
+                                <label class="form_label" for="NameRequest"><b>Full name:</b></label><br>
+                                <input class="form__input" type="text" name="name" required><br>
+                                <label class="form_label" for="date"><b>Dates:</b></label><br>
+                                <input class="form__input" type="date" class="date" required><br>
+                                <b>Room:</b> <br>
+                                <div class="room_selector">
+                                    <div class="choice">
+                                        <input class="form__input" type="radio" name="apartment" checked>
+                                        <label class="choice" for="apartment">Capella</label>                                
+                                    </div>
+                                    <div class="choice">
+                                        <input class="form__input" type="radio" name="apartment">
+                                        <label class="choice" for="apartment">Na Marit</label>                                
+                                    </div>
+                                    <div class="choice">
+                                        <input class="form__input" type="radio" name="apartment">
+                                        <label class="choice" for="apartment">Talaia Apartment</label>                                
+                                    </div>
+                                    <div class="choice">
+                                        <input class="form__input" type="radio" name="apartment">
+                                        <label class="choice" for="apartment">Sa Cova Apartment</label>                                
+                                    </div>
+                                </div>
+                                <label class="form_label" for="capacity"><b>Number of guests:</b></label><br>
+                                <input class="form__input" type="number" name="guests-quantity" placeholder="0" required max="3" min="1"><br>
+                                <label class="form_label" for="observations"><b>Addtional information for the owner:</b></label><br>
+                                <textarea class="observations" maxlength="200" placeholder="Ex. 'Is it possible to bring our pet?' 'Could you provide a baby cot and a high chair for our son?" rows="5" cols="30"></textarea><br>
+                                <br>
+                                <input class="form__inputButton" type="submit" value="Request booking">
+                            </fieldset>
+                        </form>
+                    </div>
+                    <!--Location with google maps-->
+                    <div class="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12283.690352336307!2d2.7509808!3d39.6739559!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1297ea8cf0e16a21%3A0x777520c6742dfa3f!2sFinca%20Es%20Cab%C3%A0s!5e0!3m2!1ses!2sde!4v1702242902552!5m2!1ses!2sde" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+        <!--Contact and information-->
+        <footer>
+            <a target="_blank" href="../aboutUs.html" ><div class="aboutUs">About Us</div></a>
+            <a target="_blank" href="../contact.html"><div class="contact"> Contact </div></a>
+        </footer>
+    </body>
+</html>

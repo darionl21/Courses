@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="Description" content="accomodation finder">
+        <meta name="Author" content="Dario Reig">
+        <meta name="Author" content="Aleix Diaz">
+        <meta name="Keywords" content="hotels, vacation, mallorca">
+        <title>We Find.</title>
+        <link rel="icon" type="image/png" target="_blank" href="./images/icon.png">
+        <link rel="stylesheet" type="text/css" target="_blank" href="../hotel.css">
+    </head>
+    <body>
+        <header>
+        <nav class="btn-pluss-wrapper">
+            <div target="_blank" href="#" class="btn-pluss">
+                <ul>
+                    <li><a target="_blank" href="../landing.html"> Home </a></li>
+                    <li><a target="_blank" href="../find.html"> Find. </a></li>
+                    <li><a target="_blank" href="../contact.html"> Contact </a></li>
+                    <li><a target="_blank" href="../aboutUs.html"> About Us </a></li>
+                </ul>
+            </div>
+        </nav>
+        <a class="logo" target="_blank" href="../landing.html"> <img class="logo" src="../images/logo.png" alt="WeFind."></a>
+        <a class="twitter" target="_blank" href="https://twitter.com"><img class="twitter" src="../images/icons8-twitter-50.png" alt="Twitter"></a>
+        <a class="instagram" target="_blank" href="https://instagram.com"><img class="instagram" src="../images/icons8-instagram-50.png" alt="Instagram"></a>
+        </header>
+        <main>
+            
+            <!--Hotel images-->
+            <div class="HotelTittle">
+                <h1><u>MontMari's Apartment</u></h1>
+            </div>
+            <div id="photosContainer">
+                <div class="photosHotel">
+                    <div id="welcomeContainer">
+                        <img id="welcome_img" alt="Living room picture" title="Living room, MontMari" src="../hotelPics/MontMari/MontMari_living.jpg">
+                    </div>
+                    <div class="mini_photosHotel">
+                        <div class="top">
+                            <img class="mini_picHotel" alt="Bedroom picture" title="Bedroom, MontMari" src="../hotelPics/MontMari/MontMari_bedroom.jpg">
+                            <img class="mini_picHotel" alt="Kitchen picture" title="Kitchen, MontMari" src="../hotelPics/MontMari/MontMari_kitchen.jpg">
+                        </div>
+                        <br>
+                        <div class="bot">
+                            <img class="mini_picHotel" alt="Terrace picture" title="Terrace, MontMari" src="../hotelPics/MontMari/Montmari_terrace.jpg">
+                            <img class="mini_picHotel" alt="Building picture" title="Building, MontMari" src="../hotelPics/MontMari/MontMari_building.jpg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="request">
+                <!--Hotel information-->
+                <div class="infoHotel">
+                    <p><b>Location: </b>Carrer de Jaume Ferrer, 15, 07012 Palma, Illes Balears.</p>
+                    <p><b>Capacity: </b>2 adults.</p>
+                    <p><b>Category: </b>Apartment.</p>
+                    <p><b>Information: </b>Located in Palma de Mallorca, Montmari, Turismo de Interior are set in the historic centre in Plaça Drassana. They offer air-conditioned accommodation with free Wi-Fi, and a shared sun terrace.
+                        Montmari, Turismo de Interior feature stylish décor. All include a lounge area with satellite TV, comfortable beds, sheets and towels and a kitchen with dishwasher, microwave and hob.                   
+                        The Montmari, Turismo de Interior are set just 100 meters from the port and 2 minutes’ walk from the 15th century Sa Llotja. Palma Cathedral and the Almudaina Palace are 5 minutes’ walk away.
+                        Montmari, Turismo de Interior is 10 minutes’ walk from Plaça Major and the Arabic baths. It is located 10 km from Palma Airport.</p>
+                </div>
+
+
+                <!--Booking request form-->
+                <div class="bookingForm">
+                    <form action="https://www3.caib.es/xestib/?idioma=es" method="get">
+                        <fieldset>
+                            <legend><h2>Booking request</h2></legend>
+                            <label for="NameRequest"><b>Full name:</b></label><br>
+                            <input class="form__input" type="text" name="name" required><br>
+                            <label for="date"><b>Dates:</b></label><br>
+                            <input class="form__input" type="date" class="date" required><br>
+                            <label for="capacity"><b>Number of guests:</b></label><br>
+                            <input class="form__input" type="number" name="guests-quantity" placeholder="0" required min="1" max="2"><br>
+                            <label for="observations"><b>Addtional information for the owner:</b></label><br>
+                            <textarea class="observations" maxlength="200" placeholder="Ex. 'Is it possible to bring our pet?' 'Could you provide a baby cot and a high chair for our son?" rows="5" cols="30"></textarea><br><br>
+                            <input class="form__inputButton" type="submit" value="Request booking">
+                        </fieldset>
+                    </form>
+                </div>
+
+                <!--Location with google maps-->
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6151.163446524201!2d2.643993!3d39.569038!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12979244a1aeeefd%3A0x531efc5185b852cb!2sCarrer%20de%20Jaume%20Ferrer%2C%2015%2C%2007012%20Palma%2C%20Illes%20Balears!5e0!3m2!1ses!2ses!4v1701476315336!5m2!1ses!2ses" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                </div>
+            </div>
+        </main>
+
+        <!--Contact and information-->
+        <footer>
+            <a target="_blank" href="../aboutUs.html" ><div class="aboutUs">About Us</div></a>
+            <a target="_blank" href="../contact.html"><div class="contact"> Contact </div></a>
+        </footer>
+    </body>
+</html>

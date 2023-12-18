@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="Description" content="accomodation finder">
+        <meta name="Author" content="Dario Reig">
+        <meta name="Author" content="Aleix Diaz">
+        <meta name="Keywords" content="hotels, vacation, mallorca">
+        <title>We Find.</title>
+        <link rel="icon" type="image/png" target="_blank" href="./images/icon.png">
+        <link rel="stylesheet" type="text/css" target="_blank" href="../hotelMultiple.css">
+    </head>
+    <body>
+        <header>
+            <nav class="btn-pluss-wrapper">
+                <div target="_blank" href="#" class="btn-pluss">
+                    <ul>
+                        <li><a target="_blank" href="../landing.html"> Home </a></li>
+                        <li><a target="_blank" href="../find.html"> Find. </a></li>
+                        <li><a target="_blank" href="../contact.html"> Contact </a></li>
+                        <li><a target="_blank" href="../aboutUs.html"> About Us </a></li>
+                    </ul>
+                </div>
+            </nav>
+            <a class="logo" target="_blank" href="../landing.html"> <img class="logo" src="../images/logo.png" alt="WeFind."></a>
+            <a class="twitter" target="_blank" href="https://twitter.com"><img class="twitter" src="../images/icons8-twitter-50.png" alt="Twitter"></a>
+            <a class="instagram" target="_blank" href="https://instagram.com"><img class="instagram" src="../images/icons8-instagram-50.png" alt="Instagram"></a> 
+            </header>
+        <main>
+            
+            <!--Hotel images-->
+            <div class="HotelTittle">
+                <h1>Hotel Nets</h1>
+            </div>
+            <div class="blocks">
+                <div class="photosHotel">
+                    <table id="photosTable">
+                        <tr> 
+                            <td>
+                                <img class="photosHotel"  alt="Individual room picture" title="Individual room, Nets" src="../hotelPics/Nets/Nets_individual.jpg">
+                            </td>
+                            <td>
+                                <img class="photosHotel"   alt="Double Standard room picture" title="Double Standard room, Nets" src="../hotelPics/Nets/Nets_doble.jpg">
+                            </td>
+                            <td>
+                                <img class="photosHotel"   alt="Double Superior room picture" title="Double Superior room, Nets" src="../hotelPics/Nets/Nets_superiordouble.jpg">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="photosHotelInfo">
+                                <h2>Individual room</h2>
+                                <p><b>Capacity:</b> 1 adult</p>
+                                <p><b>Rooms:</b> 1 Bedroom, 1 Bathroom</p>
+                            </td>
+                            <td class="photosHotelInfo">
+                                <h2>Doble Standard room</h2>
+                                <p><b>Capacity:</b> 2 adults</p>
+                                <p><b>Rooms:</b> 1 Bedrooms, 1 Bathroom</p>
+                            </td>
+                            <td class="photosHotelInfo">
+                                <h2>Double Superior room</h2>
+                                <p><b>Capacity:</b> 2 adults</p>
+                                <p><b>Rooms:</b> 1 Bedroom, 1 Bathroom</p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+                    <!--Hotel information-->
+                <div class="request">
+                    <div class="infoHotel">
+                        <p><b>Location: </b>Carrer de Villagarcia de Arosa, 20, 07610 Palma, Illes Balears.</p>
+                        <p><b>Capacity: </b>2 - 1 adults.</p>
+                        <p><b>Rating:</b> 2 stars.</p>
+                        <p><b>Category: </b>Hotel.</p>
+                        <p><b>Information: </b>OneThe Houm Nets Hotel is Houm Hotels' bet for young travelers.
+
+                            A two-star hotel in Playa de Palma, with 54 rooms, which is small, comfortable and economical, but does not mean you have to give up all the comfort and services necessary to make you feel in a sophisticated resort.
+                            
+                            The main attraction: it is 200 meters from the beach: it will take you longer to put on your tanning lotion and prepare your bag than to get to the beach!
+                            
+                            In the bag you can put beach paddles, volleyball or soccer balls, kites or any other activity since the beach is made up of a wide strip of white sand with enough space to enjoy your vacation with friends in Mallorca in the way you prefer.
+                            
+                            But if you prefer not to leave the hotel, you won't miss the beach, we assure you!
+                            
+                            You have a Mediterranean garden where you will be able to sunbathe in the solarium of the two pools with play areas and many square meters where you can reserve a place and enjoy your friends without interference, with the feeling that this garden is only for you.
+                            
+                            But you also have other games to enjoy your vacation and test which of you has the most likes on a photo or "story" in the pool: would you accept bets between you? =)
+                            
+                            You can reward yourself with a moment to relax at this hotel with spa in Playa de Palma, since without leaving the facilities you can access the jacuzzi, sauna, essential oil shower and gym at the Hotel Plaza Son Rigo.
+                            
+                            We are the best alternative for holidays with friends in Playa de Palma (Mallorca). Book your rooms now!
+                        </div>
+                    
+                    <!--Booking request form-->
+                    <div class="bookingForm">
+                        <form class="form" action="https://www3.caib.es/xestib/?idioma=es" method="get">
+                            <fieldset>
+                                <legend><h2>Booking request</h2></legend>
+                                <label class="form_label" for="NameRequest"><b>Full name:</b></label><br>
+                                <input class="form__input" type="text" name="name" required><br>
+                                <label class="form_label" for="date"><b>Dates:</b></label><br>
+                                <input class="form__input" type="date" class="date" required><br>
+                                <b>Room:</b> <br>
+                                <div class="room_selector">
+                                    <div class="choice">
+                                        <input class="form__input" type="radio" name="apartment" checked>
+                                        <label class="choice" for="apartment">Individual room</label>                                
+                                    </div>
+                                    <div class="choice">
+                                        <input class="form__input" type="radio" name="apartment">
+                                        <label class="choice" for="apartment">Doble Standard room</label>                                
+                                    </div>
+                                    <div class="choice">
+                                        <input class="form__input" type="radio" name="apartment">
+                                        <label class="choice" for="apartment">Double Superior room Apartment</label>                                
+                                    </div>
+                                </div>
+                                <label class="form_label" for="capacity"><b>Number of guests:</b></label><br>
+                                <input class="form__input" type="number" name="guests-quantity" placeholder="0" required min="1" max="2"><br>
+                                <label class="form_label" for="observations"><b>Addtional information for the owner:</b></label><br>
+                                <textarea class="observations" maxlength="200" placeholder="Ex. 'Is it possible to bring our pet?' 'Could you provide a baby cot and a high chair for our son?" rows="5" cols="30"></textarea><br>
+                                <br>
+                                <input class="form__inputButton" type="submit" value="Request booking">
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+            <!--Location with google maps-->
+            <div class="map">
+                <iframe class="multipleChoiceMap" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12310.485938684698!2d2.7419385!3d39.5230319!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12979663be929245%3A0xa49aba0ba9a4fa87!2sHotel%20Nets!5e0!3m2!1ses!2ses!4v1701833033355!5m2!1ses!2ses"   allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </main>
+
+        <!--Contact and information-->
+        <footer>
+            <a target="_blank" href="../aboutUs.html" ><div class="aboutUs">About Us</div></a>
+            <a target="_blank" href="../contact.html"><div class="contact"> Contact </div></a>
+        </footer>
+    </body>
+</html>

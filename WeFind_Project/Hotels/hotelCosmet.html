@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" target="_blank" href="../hotelMultiple.css">
+    </head>
+    <body>
+        <header>
+            <nav class="btn-pluss-wrapper">
+                <div target="_blank" href="#" class="btn-pluss">
+                    <ul>
+                        <li><a target="_blank" href="../landing.html"> Home </a></li>
+                        <li><a target="_blank" href="../find.html"> Find. </a></li>
+                        <li><a target="_blank" href="../contact.html"> Contact </a></li>
+                        <li><a target="_blank" href="../aboutUs.html"> About Us </a></li>
+                    </ul>
+                </div>
+            </nav>
+            <a class="logo" target="_blank" href="../landing.html"> <img class="logo" src="../images/logo.png" alt="WeFind."></a>
+            <a class="twitter" target="_blank" href="https://twitter.com"><img class="twitter" src="../images/icons8-twitter-50.png" alt="Twitter"></a>
+            <a class="instagram" target="_blank" href="https://instagram.com"><img class="instagram" src="../images/icons8-instagram-50.png" alt="Instagram"></a>
+            </header>
+        <main>
+            
+            <!--Hotel images-->
+            <div class="HotelTittle">
+                <h1><u>Son Cosmet</u></h1>
+            </div>
+            <div class="photosHotel">
+                <table id="photosTable">
+                    <tr>
+                        <td>
+                            <img class="photosHotel" alt="Double Terrace Villa picture" title="Double Terrace Villa" src="../hotelPics/Cosmet/hab_2.png">
+                        </td>
+                        <td>
+                            <img class="photosHotel" alt="Double Villa picture" title="Double" src="../hotelPics/Cosmet/Cosmet_doble.png">
+                        </td>
+                        <td>
+                            <img class="photosHotel" alt="Individual Villa picture" title="Individual" src="../hotelPics/Cosmet/Cosmet_individual.png">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="photosHotelInfo">
+                            <h2>Double Terrace</h2>
+                            <p><b>Capacity:</b> 2 adults.</p>
+                            <p><b>Rooms:</b> 1 Bedroom, 1 Bathroom</p>
+                        </td>
+                        <td class="photosHotelInfo">
+                            <h2>Double Villa</h2>
+                            <p><b>Capacity:</b>adults</p>
+                            <p><b>Rooms:</b> 1 Bedrooms, 1 Bathrooms</p>
+                        </td>
+                        <td class="photosHotelInfo">
+                            <h2>Individual</h2>
+                            <p><b>Capacity:</b> 1 adult</p>
+                            <p><b>Rooms:</b> 1 Bedroom, 1 Bathroom</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <hr>
+
+                <!--Hotel information-->
+            <div class="request">
+                <div class="infoHotel">
+                    <p><b>Location: </b>Ctra. Campos-Sa Ràpita, 07630 Campos, Islas Baleares, España</p>
+                    <p><b>Capacity: </b>2 - 1 adults.</p>
+                    <p><b>Category: </b>Villa.</p>
+                    <p><b>Information: </b>Son Cosmet is an old Mallorcan “possessió” of 150 hectares converted into an exclusive hotel in which tradition and innovation go hand in hand harmoniously.
+                        The construction, begun in the 13th century, with a defense tower from the 16th century, is unique in the area due to its ancestral characteristics.
+                        Large living rooms, wine cellar, terraces, porches, gardens, a spectacular pool, fields and forests constitute a dream setting.
+                        The furniture is made up of valuable pieces from the 17th and 18th centuries originating from the house and others from family inheritance.
+                        A careful and discreet service ensures that the guests' slightest wishes are fulfilled.</p>
+                </div>
+
+                <!--Location with google maps-->
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12328.081449397867!2d2.997215!3d39.423664!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1297ae41e77fe5df%3A0x576476b53202838b!2sHotel%20Son%20Cosmet!5e0!3m2!1ses!2sde!4v1702248095607!5m2!1ses!2sde" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+                <!--Booking request form-->
+                <div class="bookingForm">
+                    <form class="form" action="https://www3.caib.es/xestib/?idioma=es" method="get">
+                        <fieldset>
+                            <legend><h2>Booking request</h2></legend>
+                            <label class="form_label" for="NameRequest"><b>Full name:</b></label><br>
+                            <input class="form__input" type="text" name="name" required><br>
+                            <label class="form_label" for="date"><b>Dates:</b></label><br>
+                            <input class="form__input" type="date" class="date" required><br>
+                            <b>Room:</b> <br>
+                            <div class="room_selector">
+                                <div class="choice">
+                                    <input class="form__input" type="radio" name="apartment" checked>
+                                    <label class="choice" for="apartment">Double Terrace Villa</label>                                
+                                </div>
+                                <div class="choice">
+                                    <input class="form__input" type="radio" name="apartment">
+                                    <label class="choice" for="apartment">Double Villa</label>                                
+                                </div>
+                                <div class="choice">
+                                    <input class="form__input" type="radio" name="apartment">
+                                    <label class="choice" for="apartment">Individual Villa</label>                                
+                                </div>
+                            </div>
+                            <label class="form_label" for="capacity"><b>Number of guests:</b></label><br>
+                            <input class="form__input" type="number" name="guests-quantity" placeholder="0" required max="2" min="1"><br>
+                            <label class="form_label" for="observations"><b>Addtional information for the owner:</b></label><br>
+                            <textarea class="observations" maxlength="200" placeholder="Ex. 'Is it possible to bring our pet?' 'Could you provide a baby cot and a high chair for our son?" rows="5" cols="30"></textarea><br>
+                            <br>
+                            <input class="form__inputButton" type="submit" value="Request booking">
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </main>
+
+        <!--Contact and information-->
+        <footer>
+            <a target="_blank" href="../aboutUs.html" ><div class="aboutUs">About Us</div></a>
+            <a target="_blank" href="../contact.html"><div class="contact"> Contact </div></a>
+        </footer>
+    </body>
+</html>
